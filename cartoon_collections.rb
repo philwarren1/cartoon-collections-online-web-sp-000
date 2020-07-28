@@ -2,6 +2,7 @@ def roll_call_dwarves(name)
   hash = Hash.new
 %w(name).each_with_index { |name, index|
   hash[name] = index} 
+  puts name
 end
 def summon_captain_planet# code an argument here
   # Your code here
