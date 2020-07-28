@@ -3,9 +3,12 @@ def roll_call_dwarves(name)
   name.each_with_index {|name, index| 
   puts "#{index + 1}. #{name} "}
 end
-def summon_captain_planet(array)
+def summon_captain_planet(array,collection)
   i = 0
-  
+  while i < collection.length
+    return collection[i] if yield(collection[i])
+    i = i + 1
+  end
   array = []
   array.map! {|array| array.capitalize}
   array.each {|array| puts array + '!'}
