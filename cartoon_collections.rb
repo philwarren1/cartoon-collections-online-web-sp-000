@@ -5,10 +5,12 @@ def roll_call_dwarves(name)
 end
 def summon_captain_planet(array)
  calls = []
-  array.collect do |calls|
-    calls << "#{calls.capitalize}!"
-  end
-  calls
+  i = 0 
+  while i < array.length 
+    calls << array[i].capitalize + "!"
+    i += 1 
+  end 
+  nu_array
 end
 
 def long_planeteer_calls# code an argument here
