@@ -1,6 +1,6 @@
 def roll_call_dwarves(name)
   name.each_with_index {|name, index|
-  puts name[name] 
+  puts name[name]} 
 end
 hash = Hash.new
 %w(cat dog wombat).each_with_index { |item, index|
