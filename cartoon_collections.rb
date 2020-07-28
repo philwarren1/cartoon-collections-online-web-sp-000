@@ -4,6 +4,7 @@ def roll_call_dwarves(name)
   puts "#{index + 1}. #{name} "}
 end
 def summon_captain_planet(array)
+  i = 0
   array = []
   array.map! {|array| array.capitalize}
   array.each {|array| puts array + '!'}
