@@ -3,10 +3,10 @@ def roll_call_dwarves(name)
   name.each_with_index {|name, index| 
   puts "#{index + 1}. #{name} "}
 end
-def summon_captain_planet(array,collection)
+def summon_captain_planet(array)
   i = 0
-  while i < collection.length
-    return collection[i] if yield(collection[i])
+  while i < array.length
+    return array[i] if yield(array[i])
     i = i + 1
   end
   array = []
