@@ -5,6 +5,7 @@ def roll_call_dwarves(name)
 end
 def summon_captain_planet(array)
   i = 0
+  
   array = []
   array.map! {|array| array.capitalize}
   array.each {|array| puts array + '!'}
