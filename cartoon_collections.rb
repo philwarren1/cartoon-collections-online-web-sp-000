@@ -1,7 +1,11 @@
-def roll_call_dwarves# code an argument here
-  # Your code here
+def roll_call_dwarves(name)
+  name.each_with_index {|name, index|
+  puts name[name] 
 end
-
+hash = Hash.new
+%w(cat dog wombat).each_with_index { |item, index|
+  hash[item] = index
+}
 def summon_captain_planet# code an argument here
   # Your code here
 end
